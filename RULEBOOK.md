@@ -1,92 +1,102 @@
-# 🎲 THE LOST SYSTEMS — Mission Format (v2.2, locked)
+THE LOST SYSTEMS — Mission Format (v2.7, locked)
 
-This replaces the previous v1.0 ruleset (the "quest/realm/XP" version), which missed the mark. This is the format Joep actually wants, based on the mission ChatGPT wrote for him. It is locked as of this version: the skeleton below does not change unless Joep explicitly asks for a revision, and any change gets a version bump and a changelog entry.
+This is the locked format for every mission. It only changes when the Dungeon Master explicitly asks for a revision, versioned in the changelog below. Players cannot modify this document, only play missions and track their own XP.
 
 Every mission is one episode in a season. A season is a storyline at one fictional company; each episode is one investigation inside it.
 
-## The fixed skeleton — every mission uses exactly this structure, in this order
+The fixed skeleton — every mission uses exactly this structure, in this order
 
-```
-🎲 THE LOST SYSTEMS
+THE LOST SYSTEMS
 Season [N] — [Episode Title]
 
-CLASS
-Business Analyst
+CLASS: Business Analyst
+STATUS: Active Consultant
+Location: [Company Name]
+Threat Level: [Low / Medium / High]
+Estimated Mission Time: [XX–XX min]
 
-STATUS
-Active Consultant
+Intro
+[Short scene-setting, a message from a named stakeholder describing a
+ real problem, with conflicting or incomplete accounts, urgency, and
+ a direct question]
 
-Location
-[Company Name]
-
-Threat Level
-[Low / Medium / High]
-
-Estimated Mission Time
-[XX–XX min]
-
-📖 Intro
-[Timestamp]
-[2-5 short lines of scene-setting, second person, present tense]
-[A message from a named stakeholder: role + name]
-[The message itself: describes a real problem, includes at least two
- conflicting or incomplete accounts from different parties (e.g. dev
- vs. front-end vs. ops), states urgency/deadline, ends asking a direct question]
-[One line noting an artifact is available, e.g. a folder/file on the desktop]
-
-📦 Loot ontvangen
-[The artifact itself: real-looking API documentation, a log excerpt,
- an error message, a config snippet, etc. — technically accurate]
+Loot ontvangen
+[The artifact: real-looking API documentation, a log excerpt, etc.]
 
 Your First Task
-[Explicit constraint reminders: no code, you are the consultant, you'll
- get one shot to ask the developers the right questions later]
-[One line on what happens after this step]
+[No code, you're the consultant, one shot to ask the dev team later]
 
 The Task
-[Task, usually 3-5 numbered questions or asks. Must be answerable from
- reasoning alone, with the given artifact, not by looking things up.]
-[One line instruction on register/tone to answer in, e.g. "write as
- someone who just got hired and isn't sure of anything yet"]
+[3-5 numbered questions, answerable by reasoning + the artifact alone]
 
 Mission Rules
-* [3-5 short bullet constraints, e.g. "no guessing", "state your
-  assumptions explicitly", "think like a consultant, not a developer"]
+* [3-5 short constraints, e.g. "no guessing", "state assumptions"]
 
-[Closing line: sign-off in character, plus what happens next — see the
- Feedback Loop below for how the answer actually gets evaluated]
-```
+[Closing line: what happens next]
 
-## Rules of engagement
+Rules of engagement
 
-- **Joep is the Dungeon Master of scope.** Only he decides when a new season or episode starts, and when a season is considered finished.
-- **I draft, in character, inside the skeleton.** I write the mission content (story + a technically accurate artifact) in the structure above. I do not add new sections, rename them, drop the stat block, or change the tone/format between episodes.
-- **The task must be answerable by reasoning, not lookup.** Every "Opdracht" is something Joep can genuinely think through as a BA, using only what's in the artifact and the message: no trick requires outside research.
-- **No code, ever.** Joep is the consultant, not the developer. Every mission is solvable through analysis, questions, and documentation reading.
-- **This skeleton is locked.** If Joep wants to change a section, add one, or alter the tone, he says so explicitly. That triggers a version bump and a changelog entry below. Nothing changes silently between episodes.
-- **English throughout.** All mission text, artifacts, teacher's notes, hints, and grading are written in English.
 
-### Beginner calibration
+Only the Dungeon Master controls scope and rules. They decide when a new season or episode starts, and they're the only one who can request a change to this Rulebook. Players cannot.
+Claude drafts, in character, inside the skeleton. No new sections, no renamed sections, same tone every episode.
+The task must be answerable by reasoning, not lookup.
+No code, ever.
+English throughout.
+This skeleton is locked. Changes require the Dungeon Master's explicit request, a version bump, and a changelog entry.
 
-- Joep is not a technical specialist. He can't ask about a concept he doesn't know exists, so a mission can't quietly assume prior knowledge it never gave him.
-- Any concept a question depends on must already be visible somewhere in the Intro or the artifact (in plain language), or explained inline via a "📘 Teacher's note." New jargon is introduced before it's required, never after.
-- When in doubt about whether something assumes too much, default to explaining more, not less.
 
-### Feedback loop (replaces one-shot grading)
+Beginner calibration
 
-Grading is no longer instant. It's a back-and-forth:
 
-1. Joep submits an initial answer.
-2. I respond in character as the stakeholder, giving a **hint**, not a grade: I point at one or two things that are thin, missing, or worth pushing on, without revealing the mechanism or the answer itself.
-3. Joep revises or extends his answer in light of the hint.
-4. Repeat step 2-3 for at most one more round if there's clearly more to draw out.
-5. Only once Joep says he's ready, or the hint rounds are used up, do I give the full in-character grade and reveal the truth.
+No question can depend on a concept that wasn't already shown, in plain language, somewhere in the Intro, the artifact, or a Teacher's note.
+When in doubt, explain more, not less.
 
-The reveal itself may introduce a brand-new concept Joep didn't know before (that's the point, it's the payoff), but everything asked of him *before* the reveal must stay inside what Beginner Calibration allows.
 
-## Changelog
+Feedback loop (replaces one-shot grading)
 
-- v2.2 (2026-07-16) — Switched all mission content and feedback from Dutch to English, per Joep's request.
-- v2.1 (2026-07-16) — Added Beginner Calibration and the Feedback Loop, replacing one-shot grading with hint-then-revise. Requested by Joep after Episode 1.
-- v2.0 (2026-07-14) — Replaced the quest/realm/XP ruleset with the locked "Lost Systems" mission format, based on Joep's ChatGPT example (Novaris Solutions, Season I — The First Contract).
-- v1.0 (2026-07-14) — Deprecated. Original RPG quest/realm/XP ruleset, superseded before first use.
+
+The player submits an initial answer.
+Claude gives a hint, not a grade: pointing at what's thin or missing, without revealing the answer.
+The player revises.
+At most one more hint round if needed.
+Only then does Claude give the full grade and reveal.
+
+
+Delivery, adapted per player
+
+
+The mission skeleton itself is delivered whole, in one message, its short lines, labeled sections, and code blocks already make it digestible.
+Everything outside the mission skeleton, explanations, instructions, admin/tooling steps, is adapted to what works for the player. If a player finds long or unstructured messages hard to follow, those get broken into single, concrete steps, one per message, waiting for confirmation before the next.
+
+
+XP & Leaderboard
+
+
+Every mission scores 10-100 XP, not a fixed number, so two people doing the same mission can land differently based on how they answered.
+Scoring bands, judged when the full grade is given:
+
+90-100: sharp and structured, catches the real shape of the problem, no hints needed
+70-89: solid reasoning, minor gaps, at most one hint used
+50-69: on the right track but vague, needed both hint rounds
+10-49: attempted, but mostly guessing or off-track
+
+
+
+XP is only awarded at the full grade + reveal, not for hints alone.
+XP is tracked in LEADERBOARD.md at the repo root: alias, Total XP, Missions Completed.
+Anyone with write access edits their own row directly on GitHub after finishing a mission.
+Other Heeyoo BAs join by being added as Collaborators on the repo (Settings → Collaborators), then they can add themselves to the leaderboard and run missions themselves.
+
+
+Changelog
+
+
+v2.7 (2026-07-16) — Split "player" and "Dungeon Master" into distinct roles: only the Dungeon Master can change this Rulebook, players can only play missions and track XP.
+v2.6 (2026-07-16) — Genericized the whole document: no personal names, since this repo is public/shared with other Heeyoo BAs. "The player" replaces any individual's name throughout.
+v2.5 (2026-07-16) — Replaced fixed per-mission XP with a 10-100 scored range and scoring bands, so quality of the answer determines XP, not just completion.
+v2.4 (2026-07-16) — Added XP & Leaderboard rules, tracked in LEADERBOARD.md, opening the door to other Heeyoo BAs joining via the same repo.
+v2.3 (2026-07-16) — Added delivery pacing adapted per player: missions stay whole (one message, the structured skeleton); everything else (explanations, setup steps) can be broken into short, one-at-a-time steps if that works better for the player.
+v2.2 (2026-07-16) — Switched all mission content and feedback to English.
+v2.1 (2026-07-16) — Added Beginner Calibration and the Feedback Loop, replacing one-shot grading with hint-then-revise.
+v2.0 (2026-07-14) — Replaced the quest/realm/XP ruleset with the locked "Lost Systems" mission format.
+v1.0 (2026-07-14) — Deprecated. Original RPG quest/realm/XP ruleset, superseded before first use.
