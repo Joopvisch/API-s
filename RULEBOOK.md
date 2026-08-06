@@ -15,7 +15,7 @@
 /\__/ / | | /\__/ / | | | |___| |  | |/\__/ /
 \____/  \_/ \____/  \_/ \____/\_|  |_/\____/ 
 
- based on real Heeyoo API cases                     RULEBOOK v2.8, locked
+ based on real API cases                     RULEBOOK v2.8, locked
 ```
 
 # THE LOST SYSTEMS — Mission Format (v2.8, locked)
