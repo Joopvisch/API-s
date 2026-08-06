@@ -1,4 +1,24 @@
-# THE LOST SYSTEMS — Mission Format (v2.7, locked)
+```
+                                  ...a rulebook only the Dungeon Master may touch
+
+ _____ _   _  _____   _     _____ _____ _____ 
+|_   _| | | ||  ___| | |   |  _  /  ___|_   _|
+  | | | |_| || |__   | |   | | | \ `--.  | |  
+  | | |  _  ||  __|  | |   | | | |`--. \ | |  
+  | | | | | || |___  | |___\ \_/ /\__/ / | |  
+  \_/ \_| |_/\____/  \_____/\___/\____/  \_/  
+
+ _______   _______ _____ ________  ___ _____ 
+/  ___\ \ / /  ___|_   _|  ___|  \/  |/  ___|
+\ `--. \ V /\ `--.  | | | |__ | .  . |\ `--. 
+ `--. \ \ /  `--. \ | | |  __|| |\/| | `--. \
+/\__/ / | | /\__/ / | | | |___| |  | |/\__/ /
+\____/  \_/ \____/  \_/ \____/\_|  |_/\____/ 
+
+ based on real Heeyoo API cases                     RULEBOOK v2.8, locked
+```
+
+# THE LOST SYSTEMS — Mission Format (v2.8, locked)
 
 This is the locked format for every mission. It only changes when the Dungeon Master explicitly asks for a revision, versioned in the changelog below. Players cannot modify this document, only play missions and track their own XP.
 
@@ -7,7 +27,9 @@ Every mission is one episode in a season. A season is a storyline at one fiction
 ## The fixed skeleton — every mission uses exactly this structure, in this order
 
 ```
-THE LOST SYSTEMS
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+   T H E   L O S T   S Y S T E M S
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 Season [N] — [Episode Title]
 
 CLASS: Business Analyst
@@ -16,21 +38,21 @@ Location: [Company Name]
 Threat Level: [Low / Medium / High]
 Estimated Mission Time: [XX–XX min]
 
-Intro
+▓▓▓ INTRO ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 [Short scene-setting, a message from a named stakeholder describing a
  real problem, with conflicting or incomplete accounts, urgency, and
  a direct question]
 
-Loot ontvangen
+▓▓▓ LOOT ONTVANGEN ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 [The artifact: real-looking API documentation, a log excerpt, etc.]
 
-Your First Task
+▓▓▓ YOUR FIRST TASK ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 [No code, you're the consultant, one shot to ask the dev team later]
 
-The Task
+▓▓▓ THE TASK ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 [3-5 numbered questions, answerable by reasoning + the artifact alone]
 
-Mission Rules
+▓▓▓ MISSION RULES ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 * [3-5 short constraints, e.g. "no guessing", "state assumptions"]
 
 [Closing line: what happens next]
@@ -40,6 +62,7 @@ Mission Rules
 
 - **Only the Dungeon Master controls scope and rules.** They decide when a new season or episode starts, and they're the only one who can request a change to this Rulebook. Players cannot.
 - **Claude drafts, in character, inside the skeleton.** No new sections, no renamed sections, same tone every episode.
+- **No emoji, ever.** Section headers use the banner format shown above (`▓▓▓ LABEL ▓▓▓▓...`), never emoji.
 - **The task must be answerable by reasoning, not lookup.**
 - **No code, ever.**
 - **English throughout.**
@@ -78,6 +101,7 @@ Mission Rules
 
 ## Changelog
 
+- v2.8 (2026-08-06) — Replaced emoji section markers with ASCII banner headers (Office-memo × D&D-plaque style: `▓▓▓ LABEL ▓▓▓...`) for every mission section, plus a single top banner on this document. Added an explicit "no emoji, ever" rule.
 - v2.7 (2026-07-16) — Split "player" and "Dungeon Master" into distinct roles: only the Dungeon Master can change this Rulebook, players can only play missions and track XP.
 - v2.6 (2026-07-16) — Genericized the whole document: no personal names, since this repo is public/shared with other Heeyoo BAs. "The player" replaces any individual's name throughout.
 - v2.5 (2026-07-16) — Replaced fixed per-mission XP with a 10-100 scored range and scoring bands, so quality of the answer determines XP, not just completion.
