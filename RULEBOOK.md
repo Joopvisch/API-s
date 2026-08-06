@@ -24,7 +24,7 @@ This is the locked format for every mission. It only changes when the Dungeon Ma
 
 Every mission is one episode in a season. A season is a storyline at one fictional company; each episode is one investigation inside it.
 
-## The fixed skeleton — every mission uses exactly this structure, in this order
+## The skeleton (every mission uses exactly this structure, in this order)
 
 ```
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
