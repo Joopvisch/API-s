@@ -55,7 +55,8 @@ Auth API
 
 Daarin zit één bestand.
 
-📦 Loot ontvangen | 📜 API Endpoint
+📦 Loot ontvangen:
+  📜 API Endpoint
 
 ```
 POST /auth/refresh
