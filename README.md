@@ -1,3 +1,23 @@
+```
+                            ...a game that delves deeper than an org chart
+
+ _____ _   _  _____   _     _____ _____ _____ 
+|_   _| | | ||  ___| | |   |  _  /  ___|_   _|
+  | | | |_| || |__   | |   | | | \ `--.  | |  
+  | | |  _  ||  __|  | |   | | | |`--. \ | |  
+  | | | | | || |___  | |___\ \_/ /\__/ / | |  
+  \_/ \_| |_/\____/  \_____/\___/\____/  \_/  
+
+ _______   _______ _____ ________  ___ _____ 
+/  ___\ \ / /  ___|_   _|  ___|  \/  |/  ___|
+\ `--. \ V /\ `--.  | | | |__ | .  . |\ `--. 
+ `--. \ \ /  `--. \ | | |  __|| |\/| | `--. \
+/\__/ / | | /\__/ / | | | |___| |  | |/\__/ /
+\____/  \_/ \____/  \_/ \____/\_|  |_/\____/ 
+
+ an API investigation campaign                      v2.8 mission format
+```
+
 # The Lost Systems — an API Investigation Campaign
 
 A Business Analyst's case files: narrative missions where you play a consultant investigating a broken system, working only from stakeholder messages and technical artifacts. No code is written. The point is to build real fluency with how APIs work by reasoning through incidents the way a BA actually would on assignment.
