@@ -30,8 +30,6 @@
 
 ```
 
-📖 Intro
-
 09:14.
 Tweede week bij Kester Digital.
 Je koffie is nog warm als je Slack-melding binnenkomt.
