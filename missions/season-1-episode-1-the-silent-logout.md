@@ -19,7 +19,7 @@
   ||||    --==*==--      |      --==*==--    ||||
   ||||                   |                   ||||
   ||||      STATUS       |     EST. TIME     ||||
-  |||| Active Consultant |     45–60 min     ||||
+  |||| Active Consultant |     15–20 min     ||||
   ||||    --==*==--      |                   ||||
   ||||                   |                   ||||
   ||||   THREAT LEVEL    |                   ||||
