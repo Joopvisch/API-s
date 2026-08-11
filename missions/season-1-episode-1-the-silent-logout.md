@@ -30,39 +30,27 @@
 
 ```
 
-09:14.
-Tweede week bij Kester Digital.
-Je koffie is nog warm als je Slack-melding binnenkomt.
+09:14. 
+Second week at Kester Digital. Your coffee is still warm when a Slack notification comes in.
 
 From: Sanne de Groot — Product Owner
+"Hey, sorry to hit you with this right away. Since last night, customers have been getting logged out at random, mid-session. Support is getting dozens of tickets. I've heard three different versions of the story. Backend says: 'the tokens are valid, we're not seeing anything wrong.' Mobile team says: 'the app is doing exactly what it's supposed to do, it just requests a new token whenever it needs one.' Customer service says: 'it happens randomly, not to everyone, and not at a fixed time.' I have a call with the client tomorrow morning at 09:00. I want to know by this afternoon: where should I even start looking? There's a folder on your desktop."
 
-"Hoi, sorry dat ik je er meteen inschiet.
-Sinds gisteravond loggen klanten willekeurig uit, midden in hun sessie.
-Support krijgt tientallen tickets binnen.
-Ik heb drie versies van het verhaal gehoord.
-Backend zegt: 'de tokens zijn geldig, wij zien niks geks.'
-Mobile team zegt: 'de app doet exact wat hij moet doen, hij vraagt gewoon een nieuw token op wanneer dat nodig is.'
-Klantenservice zegt: 'het gebeurt willekeurig, niet bij iedereen, en niet op een vast moment.'
-Ik heb morgenvroeg 09:00 een call met de klant.
-Ik wil vanmiddag nog weten: waar moet ik dit zoeken?
-Er staat een map op je bureaublad."
-
-Op je bureaublad ligt één map.
+On your desktop is a single folder.
 
 ```
 Auth API
 ```
 
-Daarin zit één bestand.
+Inside it is one file.
 
-📦 Loot ontvangen:
-  📜 API Endpoint
+📦 Loot received: 📜 API Endpoint
 
 ```
 POST /auth/refresh
 ```
 
-Documentatie:
+Documentation:
 
 ```
 Refreshes an expired access token.
@@ -84,30 +72,24 @@ Response
 }
 ```
 
-Je eerste opdracht
+Your First Task
 
-Je mag geen code schrijven.
-Je bent de consultant.
-Je krijgt straks maar één kans om de developers de juiste vragen te stellen.
-Voordat je dat doet, wil Sanne weten hoe jij naar dit probleem kijkt.
+You may not write code. You're the consultant. In a moment, you'll get exactly one shot at asking the dev team the right questions. Before you do, Sanne wants to know how you're reading this problem.
+The Task
 
-Opdracht
+Answer only these four questions:
 
-Beantwoord alleen deze vier vragen:
+1. What information is still missing to determine where the problem lies?
+2. Which stakeholders would you want to talk to?
+3. What hypotheses do you have based on this documentation alone?
+4. What are the first three research questions you'd ask?
 
-1. Welke informatie ontbreekt nog om te bepalen waar het probleem zit?
-2. Welke stakeholders zou jij willen spreken?
-3. Welke hypotheses heb je op basis van alleen deze documentatie?
-4. Welke drie onderzoeksvragen stel jij als eerste?
-
-Schrijf alsof je net bent ingehuurd en nog niets zeker weet.
-
+Write as if you were just hired and don't know anything for certain yet.
 Mission Rules
 
-* Geen gokken.
-* Benoem aannames expliciet.
-* Denk als een consultant, niet als een developer.
-* Er is geen perfect antwoord. Wel een sterke aanpak.
+* No guessing.
+* State your assumptions explicitly.
+* Think like a consultant, not a developer.
+* There's no perfect answer. Just a strong approach.
 
-Succes, consultant.
-Wanneer je jouw analyse hebt ingeleverd, beoordeel ik deze alsof ik Sanne ben. Pas daarna ontdek je wat er écht aan de hand is.
+Good luck, consultant. Once you submit your analysis, I'll grade it as if I were Sanne. Only then will you find out what's really going on.
