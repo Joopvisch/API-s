@@ -58,7 +58,7 @@ Inside it is one endpoint.
 
 <br>
 ```
-▓▓ **[+]** LOOT RECEIVED ▓▓
+▓▓ <strong>[+]</strong> LOOT RECEIVED ▓▓
 
 ```text
 Basket API Endpoint
