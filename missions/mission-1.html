@@ -1,1 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission 1 — The Silent Logout</title>
 
+  <style>
+    body {
+      background: #111;
+      color: #f2f2f2;
+      font-family: monospace;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    pre {
+      color: #f2f2f2;
+      overflow-x: auto;
+      white-space: pre;
+    }
+
+    .section-title {
+      margin-top: 32px;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+
+    .box {
+      border: 1px solid #f2f2f2;
+      padding: 16px;
+      margin: 16px 0;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: #f2f2f2;
+      text-decoration: none;
+      border: 1px solid #f2f2f2;
+      padding: 8px 12px;
+    }
+
+    .back-link:hover {
+      background-color: #f2f2f2;
+      color: #111;
+    }
+
+    input {
+      font-family: monospace;
+      padding: 6px;
+      margin-left: 8px;
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="back-link" href="../index.html">[ BACK TO HOME ]</a>
+
+  <pre>
+                 ,     \    /      ,
+                / \    )\__/(     / \
+               /   \  (_\  /_)   /   \
+ _____________/_____\__\@  @/___/_____\______________
+|                      |\../|                        |
+|                       \VV/                         |
+| THE LOST SYSTEMS — MISSION 1 — THE SILENT LOGOUT  |
+|____________________________________________________|
+          |    /\ /      \\       \ /\    |
+          |  /   V        ))       V   \  |
+          |/     `       //        '     \|
+          `              V                '
+      __________________   __________________
+  .-/|                  \ /                  |\-.
+  ||||      CLASS        |      LOCATION     ||||
+  ||||  Business Analyst |   Kester Digital  ||||
+  ||||    --==*==--      |      --==*==--    ||||
+  ||||                   |                   ||||
+  ||||      STATUS       |     EST. TIME     ||||
+  |||| Active Consultant |     10–15 min     ||||
+  ||||    --==*==--      |                   ||||
+  ||||                   |                   ||||
+  ||||   THREAT LEVEL    |                   ||||
+  ||||       Low         |                   ||||
+  ||||__________________ | __________________||||
+  ||/===================\|/===================\||
+  `--------------------~___~-------------------''
+  </pre>
+
+  <div class="section-title">▓▓▓ INTRO ▓▓▓</div>
+
+  <p>
+    It is your first week at Kester Digital. You are still learning names, systems
+    and where the coffee machine is, when a message appears in the team chat.
+  </p>
+
+  <p>
+    Several users have been logged out of the mobile app without warning.
+    The reports seem random. Some users say it happens after a few minutes.
+    Others say it happens after returning to the app later in the day.
+  </p>
+
+  <p>Three teams have already shared their first opinion.</p>
+
+  <div class="box">
+    <p><strong>Backend:</strong> “The token is valid when we issue it.”</p>
+    <p><strong>Mobile:</strong> “We refresh tokens when needed.”</p>
+    <p><strong>Support:</strong> “Users say they are suddenly logged out.”</p>
+  </div>
+
+  <p>Your lead turns to you.</p>
+
+  <p>
+    “Before we start blaming each other, I want to know whether we’re asking the
+    right questions.”
+  </p>
+
+  <div class="section-title">▓▓▓ LOOT RECEIVED ▓▓▓</div>
+
+  <p><strong>[+]</strong> Authentication API excerpt</p>
+
+  <div class="box">
+    <pre>
+POST /auth/refresh
+
+Description:
+Refreshes the access token using a valid refresh token.
+
+Request header:
+Authorization: Bearer &lt;refresh_token&gt;
+
+Successful response:
+200 OK
+
+{
+  "accessToken": "new-token-value",
+  "expiresIn": 3600
+}
+
+Possible error:
+401 Unauthorized
+
+{
+  "error": "invalid_refresh_token"
+}
+    </pre>
+  </div>
+
+  <div class="section-title">▓▓▓ MISSION DATA ▓▓▓</div>
+
+  <div class="box">
+    <pre>
+DIFFICULTY      [*....]
+SKILL FOCUS     Investigation
+                API Literacy
+MAXIMUM XP      100 XP
+BASE REWARD     20 Gold
+    </pre>
+  </div>
+
+  <div class="section-title">▓▓▓ THE TASK ▓▓▓</div>
+
+  <p>
+    You are not solving the incident yet. Your first job is to structure the uncertainty.
+  </p>
+
+  <p>Answer these two questions:</p>
+
+  <ol>
+    <li>What do you know for certain based on the information currently available?</li>
+    <li>What are the 4 most useful questions you would ask next?</li>
+  </ol>
+
+  <p>Use this structure:</p>
+
+  <div class="box">
+    <p><strong>FACTS</strong></p>
+
+    <p>
+      1.
+      <input id="fact1" type="text">
+    </p>
+
+    <p>2.</p>
+    <p>3.</p>
+
+    <p><strong>QUESTIONS</strong></p>
+
+    <p>1.</p>
+    <p>Why this matters:</p>
+
+    <p>2.</p>
+    <p>Why this matters:</p>
+
+    <p>3.</p>
+    <p>Why this matters:</p>
+
+    <p>4.</p>
+    <p>Why this matters:</p>
+  </div>
+
+  <div class="section-title">▓▓▓ MISSION RULES ▓▓▓</div>
+
+  <div class="box">
+    <pre>
+- Separate facts from assumptions.
+- Do not assign blame yet.
+- Use only the evidence currently available.
+- No code required.
+    </pre>
+  </div>
+
+  <p>
+    Hints, scoring, XP, Gold and retry rules are defined in
+    <a href="../RULEBOOK.md" style="color:#f2f2f2;">RULEBOOK.md</a>.
+  </p>
+
+  <div class="section-title">▓▓▓ MISSION PROGRESS ▓▓▓</div>
+
+  <div class="box">
+    <pre>
+Mission 1A   [ ACTIVE ]
+Mission 1B   [ LOCKED ]
+Mission 1C   [ LOCKED ]
+    </pre>
+  </div>
+</body>
+</html>
