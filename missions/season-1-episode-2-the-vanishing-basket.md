@@ -57,7 +57,6 @@ On your desktop is a new folder.
 Inside it is one endpoint.
 
 <br>
-```
 ▓▓ <strong>[+]</strong> LOOT RECEIVED ▓▓
 
 ```text
