@@ -3,56 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mission 1 — The Silent Logout</title>
+  <title>The Lost Systems</title>
 
   <style>
     body {
       background: #111;
       color: #f2f2f2;
       font-family: monospace;
-      max-width: 900px;
+      max-width: 800px;
       margin: 40px auto;
       padding: 20px;
+    }
+
+    h1 {
+      letter-spacing: 4px;
+      text-align: left;
+    }
+
+    p {
       line-height: 1.6;
     }
 
-    pre {
-      color: #f2f2f2;
-      overflow-x: auto;
-      white-space: pre;
-    }
-
-    h1, h2 {
-      font-weight: normal;
-      letter-spacing: 2px;
-    }
-
-    .section-title {
-      margin-top: 32px;
-      margin-bottom: 12px;
-      font-weight: bold;
-    }
-
-    .box {
-      border: 1px solid #f2f2f2;
-      padding: 16px;
-      margin: 16px 0;
-    }
-
-    code {
+    button {
       font-family: monospace;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 24px;
+      padding: 12px 20px;
+      background-color: #111;
       color: #f2f2f2;
-      text-decoration: none;
       border: 1px solid #f2f2f2;
-      padding: 8px 12px;
+      cursor: pointer;
     }
 
-    .back-link:hover {
+    button:hover {
       background-color: #f2f2f2;
       color: #111;
     }
@@ -60,186 +41,23 @@
 </head>
 
 <body>
-  <a class="back-link" href="../index.html">[ BACK TO HOME ]</a>
+  <h1>THE LOST SYSTEMS</h1>
 
-  <pre>
-                 ,     \    /      ,
-                / \    )\__/(     / \
-               /   \  (_\  /_)   /   \
- _____________/_____\__\@  @/___/_____\______________
-|                      |\../|                        |
-|                       \VV/                         |
-| THE LOST SYSTEMS — MISSION 1 — THE SILENT LOGOUT  |
-|____________________________________________________|
-          |    /\ /      \\       \ /\    |
-          |  /   V        ))       V   \  |
-          |/     `       //        '     \|
-          `              V                '
-      __________________   __________________
-  .-/|                  \ /                  |\-.
-  ||||      CLASS        |      LOCATION     ||||
-  ||||  Business Analyst |   Kester Digital  ||||
-  ||||    --==*==--      |      --==*==--    ||||
-  ||||                   |                   ||||
-  ||||      STATUS       |     EST. TIME     ||||
-  |||| Active Consultant |     10–15 min     ||||
-  ||||    --==*==--      |                   ||||
-  ||||                   |                   ||||
-  ||||   THREAT LEVEL    |                   ||||
-  ||||       Low         |                   ||||
-  ||||__________________ | __________________||||
-  ||/===================\|/===================\||
-  `--------------------~___~-------------------''
-  </pre>
-
-  <div class="section-title">▓▓▓ INTRO ▓▓▓</div>
+  <p>Business Analyst RPG</p>
 
   <p>
-    It is your first week at Kester Digital. You are still learning names, systems
-    and where the coffee machine is, when a message appears in the team chat.
+    Investigate broken systems.<br>
+    Question stakeholders.<br>
+    Read the evidence.<br>
+    Become a better Business Analyst.
   </p>
 
-  <p>
-    Several users have been logged out of the mobile app without warning.
-    The reports seem random. Some users say it happens after a few minutes.
-    Others say it happens after returning to the app later in the day.
-  </p>
+  <a href="missions/mission-1.html">
+    <button>START CAMPAIGN</button>
+  </a>
 
-  <p>
-    Three teams have already shared their first opinion.
-  </p>
+  <hr>
 
-  <div class="box">
-    <p><strong>Backend:</strong> “The token is valid when we issue it.”</p>
-    <p><strong>Mobile:</strong> “We refresh tokens when needed.”</p>
-    <p><strong>Support:</strong> “Users say they are suddenly logged out.”</p>
-  </div>
-
-  <p>
-    Your lead turns to you.
-  </p>
-
-  <p>
-    “Before we start blaming each other, I want to know whether we’re asking the
-    right questions.”
-  </p>
-
-  <div class="section-title">▓▓▓ LOOT RECEIVED ▓▓▓</div>
-
-  <p><strong>[+]</strong> Authentication API excerpt</p>
-
-  <div class="box">
-    <pre>
-POST /auth/refresh
-
-Description:
-Refreshes the access token using a valid refresh token.
-
-Request header:
-Authorization: Bearer &lt;refresh_token&gt;
-
-Successful response:
-200 OK
-
-{
-  "accessToken": "new-token-value",
-  "expiresIn": 3600
-}
-
-Possible error:
-401 Unauthorized
-
-{
-  "error": "invalid_refresh_token"
-}
-    </pre>
-  </div>
-
-  <div class="section-title">▓▓▓ YOUR FIRST TASK ▓▓▓</div>
-
-  <div class="box">
-    <pre>
-MISSION DATA
-
-DIFFICULTY      [*....]
-SKILL FOCUS     Investigation
-                API Literacy
-MAXIMUM XP      100 XP
-BASE REWARD     20 Gold
-    </pre>
-  </div>
-
-  <p>
-    You are not solving the incident yet.
-  </p>
-
-  <p>
-    Your first job is to structure the uncertainty.
-  </p>
-
-  <div class="section-title">▓▓▓ THE TASK ▓▓▓</div>
-
-  <p>
-    Answer these two questions:
-  </p>
-
-  <ol>
-    <li>What do you know for certain based on the information currently available?</li>
-    <li>What are the 4 most useful questions you would ask next?</li>
-  </ol>
-
-  <p>
-    Use this structure:
-  </p>
-
-  <div class="box">
-    <pre>
-FACTS
-
-1.
-2.
-3.
-
-QUESTIONS
-
-1.
-Why this matters:
-
-2.
-Why this matters:
-
-3.
-Why this matters:
-
-4.
-Why this matters:
-    </pre>
-  </div>
-
-  <div class="section-title">▓▓▓ MISSION RULES ▓▓▓</div>
-
-  <div class="box">
-    <pre>
-- Separate facts from assumptions.
-- Do not assign blame yet.
-- Use only the evidence currently available.
-- No code required.
-    </pre>
-  </div>
-
-  <p>
-    Hints, scoring, XP, Gold and retry rules are defined in
-    <a href="../RULEBOOK.md" style="color:#f2f2f2;">RULEBOOK.md</a>.
-  </p>
-
-  <div class="box">
-    <pre>
-MISSION PROGRESS
-
-Mission 1A   [ ACTIVE ]
-Mission 1B   [ LOCKED ]
-Mission 1C   [ LOCKED ]
-    </pre>
-  </div>
+  <p>XP: 0 | Gold: 0</p>
 </body>
 </html>
