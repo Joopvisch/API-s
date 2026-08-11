@@ -32,33 +32,24 @@
 11:27.
 
 Three days after the logout incident.
-
 You're halfway through lunch when Sanne appears beside your desk.
-
 "Apparently you're becoming our problem magnet."
-
 She drops another support ticket in front of you.
-
 Customers are reporting that products sometimes disappear from their shopping basket.
-
 Not individual products.
 
 The **entire basket**.
 
 Customer Service says:
-
 > "People add products, come back later, and suddenly everything is gone."
 
 Frontend says:
-
 > "We just display whatever the Basket API gives us."
 
-Backend says:
-
+Backend says
 > "The endpoint works. We're returning valid responses."
 
 Sanne looks at you.
-
 "Before everyone starts blaming everyone else again, tell me what we actually know."
 
 On your desktop is a new folder.
@@ -132,7 +123,6 @@ the basket may no longer be available.
 Sanne points at the documentation.
 
 "Don't solve it yet."
-
 "First tell me what this actually says."
 
 ---
@@ -253,7 +243,6 @@ SCORING
 ```
 
 Gold is earned by completing the mission part.
-
 Gold can be spent on hints during future mission parts.
 
 **[?]** HINT AVAILABLE
