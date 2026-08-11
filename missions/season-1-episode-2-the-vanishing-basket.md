@@ -57,7 +57,7 @@ On your desktop is a new folder.
 Inside it is one endpoint.
 
 <br>
-▓▓ **[+]** LOOT RECEIVED ▓▓▓▓▓▓
+▓▓ **[+]** LOOT RECEIVED ▓▓
 
 ```text
 Basket API Endpoint
