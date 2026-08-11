@@ -31,7 +31,7 @@
 11:27. Three days after the logout incident. You're halfway through lunch when Sanne appears beside your desk.
 
 "Apparently you're becoming our problem magnet."
-
+<br>
 She drops another support ticket in front of you. Customers are reporting that products sometimes disappear from their shopping basket. Not individual products. The **entire basket**.
 
 Customer Service says:
