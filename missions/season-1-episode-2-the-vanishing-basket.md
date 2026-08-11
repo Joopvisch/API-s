@@ -57,6 +57,7 @@ On your desktop is a new folder.
 Inside it is one endpoint.
 
 <br>
+```markdown
 ▓▓ **[+]** LOOT RECEIVED ▓▓
 
 ```text
