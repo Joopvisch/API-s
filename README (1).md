@@ -38,11 +38,8 @@
 # The Lost Systems — an API Investigation Campaign
 
 A narrative learning campaign for Business Analysts.
-
 You play a consultant investigating broken systems through stakeholder conversations, API documentation, logs and other technical evidence.
-
 You do **not** need to be a developer and you do **not** need to write production code.
-
 The goal is to become better at understanding APIs, investigating integration problems, asking useful questions and translating technical behaviour into solid BA work.
 
 See [`RULEBOOK.md`](RULEBOOK.md) for the complete mission format and game rules.
@@ -50,15 +47,12 @@ See [`RULEBOOK.md`](RULEBOOK.md) for the complete mission format and game rules.
 ## Who this is for
 
 The campaign is designed to be accessible to **junior Business Analysts and consultants**.
-
 It assumes curiosity and analytical thinking, not deep technical knowledge.
-
 New concepts are introduced during the missions before the player is expected to use them.
 
 ## How it plays
 
 A mission is an investigation.
-
 Instead of one large assignment, episodes may be split into short sub-missions:
 
 ```
@@ -100,15 +94,12 @@ What do you investigate next?
 ```
 
 On GitHub, these choices can link to different mission files, similar to an old choose-your-own-adventure book.
-
 Different choices may reveal different evidence before the paths reconnect.
-
 Choosing a path is only part of the game. The important BA work still happens when you analyse what you find.
 
 ## Coaching
 
 This is a learning campaign, not a pass/fail exam.
-
 After a submitted answer, the coach gives:
 
 ```
@@ -120,13 +111,11 @@ What needs improvement
 ```
 
 The player may make one coached retry.
-
 Hints are optional and can be purchased with Gold before answering.
 
 ## XP & Gold
 
 Each sub-mission tells you its maximum XP and Gold reward **before you start**.
-
 Scores are always out of 10.
 
 ```
@@ -136,7 +125,6 @@ XP earned:   80 XP
 ```
 
 Gold is earned by completing sub-missions and can be spent on hints.
-
 Full scoring and hint rules are defined in [`RULEBOOK.md`](RULEBOOK.md).
 
 ## Skills
