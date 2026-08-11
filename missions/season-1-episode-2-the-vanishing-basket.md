@@ -67,7 +67,9 @@ Basket API Endpoint
 GET /baskets/{basketId}
 ```
 
+
 The documentation is short. Possibly too short.
+
 
 ```text
 GET /baskets/{basketId}
