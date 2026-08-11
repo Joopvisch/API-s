@@ -16,6 +16,31 @@
       line-height: 1.6;
     }
 
+    h1 {
+      color: #d6a84b;
+      letter-spacing: 3px;
+    }
+
+    h2 {
+      color: #7fb3d5;
+      margin-top: 0;
+    }
+
+    strong {
+      color: #d6a84b;
+    }
+
+    a {
+      color: #7fb3d5;
+    }
+
+    pre {
+      color: #f2f2f2;
+      overflow-x: auto;
+      white-space: pre;
+      line-height: 1.3;
+    }
+
     .back-link {
       display: inline-block;
       margin-bottom: 24px;
@@ -29,22 +54,36 @@
       background-color: #f2f2f2;
       color: #111;
     }
+
     .box {
-      border: 1px solid #f2f2f2;
-      padding: 16px;
-      margin: 16px 0;
-    }
-    h1 {
-      color: #d6a84b;
-      letter-spacing: 3px;
+      border: 1px solid #555;
+      padding: 20px;
+      margin: 24px 0;
     }
 
-    h2 {
+    .rule {
+      border-left: 3px solid #d6a84b;
+      padding-left: 16px;
+    }
+
+    .section-title {
       color: #7fb3d5;
+      font-weight: bold;
+      margin-top: 36px;
+      margin-bottom: 12px;
     }
 
-    strong {
-      color: #d6a84b;
+    ul, ol {
+      padding-left: 28px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .small {
+      color: #aaa;
+      font-size: 0.9em;
     }
   </style>
 </head>
@@ -52,27 +91,358 @@
 <body>
   <a class="back-link" href="index.html">[ BACK TO HOME ]</a>
 
+  <pre>
+                                                 ___====-_  _-====___
+                                           _--^^^#####//      \\#####^^^--_
+                                        _-^##########// (    ) \\##########^_
+                                       -############//  |\^^/|  \\############-
+                                     _/############//   (@::@)   \\############\_
+                                    /#############((     \\//     ))#############\
+                                   -###############\\    (oo)    //###############-
+                                  -#################\\  / VV \  //#################-
+                                 -###################\\/      \//###################-
+                                 ####################@#\  ^^  /#@####################
+                                 |################/   \|  |  |/   \#################|
+                                  \###############|    |  |  |    |#################/
+                                    \##############\   |  |  |   /################/
+                                       \############\  |  |  |  /##############/
+                                          \##########\ |  |  | /###########/
+  </pre>
+
   <h1>THE LOST SYSTEMS — RULEBOOK</h1>
+  <p class="small">Version 2.9 — Locked</p>
+
   <div class="box">
-  <h2>WHAT IS THE LOST SYSTEMS?</h2>
+    <h2>WHAT IS THE LOST SYSTEMS?</h2>
 
-  <p>
-    The Lost Systems is a narrative learning campaign for Business Analysts.
-  </p>
+    <p>
+      The Lost Systems is a narrative learning campaign for Business Analysts.
+    </p>
 
-  <p>
-    You play a consultant investigating broken systems through stakeholder conversations,
-    API documentation, logs and other technical evidence.
-  </p>
+    <p>
+      You play a consultant investigating broken systems through stakeholder
+      conversations, API documentation, logs and other technical evidence.
+    </p>
 
-  <p>
-    You do not need to be a developer and you do not need to write production code.
-  </p>
+    <p>
+      You do not need to be a developer and you do not need to write production code.
+    </p>
 
-  <p>
-    The goal is to become better at understanding APIs, investigating integration problems,
-    asking useful questions and translating technical behaviour into solid BA work.
-  </p>
-</div>
+    <p>
+      Every mission is one episode in a season. Episodes may be divided into smaller,
+      bite-sized sub-missions such as 2A, 2B and 2C.
+    </p>
+  </div>
+
+  <div class="box">
+    <h2>RULES OF ENGAGEMENT</h2>
+
+    <ul>
+      <li><strong>Only the Dungeon Master controls scope and rules.</strong></li>
+      <li>The AI acts as coach and game master.</li>
+      <li>No emoji. The campaign uses ASCII styling.</li>
+      <li>No production code is required from the player.</li>
+      <li>All missions are written in English.</li>
+      <li>Tasks must be solvable through reasoning and the evidence provided.</li>
+      <li>Facts, assumptions and hypotheses must remain distinguishable.</li>
+      <li>Rule changes require a version update.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>BEGINNER CALIBRATION</h2>
+
+    <p>
+      The campaign is designed to be accessible to junior Business Analysts.
+    </p>
+
+    <ul>
+      <li>New concepts must be introduced before the player is expected to use them.</li>
+      <li>Difficult scenarios are allowed, but individual decisions should remain small and clear.</li>
+      <li>Prefer one focused task over several broad questions.</li>
+      <li>Structured answer formats should be provided when useful.</li>
+      <li>Difficulty should come from reasoning, not hidden technical trivia.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>SUB-MISSIONS</h2>
+
+    <p>Episodes may be split into small parts.</p>
+
+    <pre>
+Mission 2
+|
++-- 2A  Observe
+|
++-- 2B  Investigate
+|
++-- 2C  Analyse / Communicate
+    </pre>
+
+    <p>A sub-mission should normally take around <strong>5–15 minutes</strong>.</p>
+
+    <p>Before starting, the player should see:</p>
+
+    <pre>
+DIFFICULTY      [*....]
+SKILL FOCUS     [skill]
+MAXIMUM XP      [number]
+BASE REWARD     [number] Gold
+    </pre>
+  </div>
+
+  <div class="box">
+    <h2>BRANCHING DECISIONS</h2>
+
+    <p>Some missions allow the player to choose what to investigate next.</p>
+
+    <pre>
+What do you investigate next?
+
+[A] Backend logs
+[B] Frontend request
+[C] Customer Support
+    </pre>
+
+    <p>
+      Different choices may reveal different evidence before the paths reconnect.
+    </p>
+
+    <p>
+      Branching is used for decisions. Core BA work still requires reasoning,
+      writing, prioritising and analysis.
+    </p>
+  </div>
+
+  <div class="box">
+    <h2>SCORING & XP</h2>
+
+    <p>Every scored sub-mission receives a score from <strong>0 to 10</strong>.</p>
+
+    <pre>
+10/10  Exceptional
+ 9/10  Very strong
+ 8/10  Strong
+ 7/10  Solid
+ 6/10  Adequate, meaningful gaps
+ 5/10  Partly correct, important gaps
+ 4/10  Weak
+ 3/10  Mostly off-track
+ 2/10  Very limited
+ 1/10  Minimal useful reasoning
+ 0/10  No assessable answer
+    </pre>
+
+    <p>XP is calculated predictably:</p>
+
+    <pre>
+XP earned = Maximum XP x (Score / 10)
+    </pre>
+
+    <p>Example:</p>
+
+    <pre>
+Maximum XP: 100
+Score:       8/10
+XP earned:   80 XP
+    </pre>
+  </div>
+
+  <div class="box">
+    <h2>GOLD</h2>
+
+    <p>Gold is the campaign currency.</p>
+
+    <ul>
+      <li>Gold is earned by completing a sub-mission.</li>
+      <li>The Base Reward is shown before the player starts.</li>
+      <li>Gold is awarded once per sub-mission.</li>
+      <li>Retries do not award additional Gold.</li>
+      <li>Gold can be spent on hints.</li>
+    </ul>
+
+    <pre>
+[*....]   20 Gold
+[**...]   30 Gold
+[***..]   40 Gold
+[****.]   50 Gold
+[*****]   60 Gold
+    </pre>
+  </div>
+
+  <div class="box">
+    <h2>HINTS</h2>
+
+    <p>
+      Hints are optional. Using a hint does not directly reduce the player's score
+      or XP. Instead, it costs Gold.
+    </p>
+
+    <pre>
+[?] NUDGE        10 Gold
+    Points toward the area that deserves another look.
+
+[?] CLUE         20 Gold
+    Narrows the investigation or explains a relevant concept.
+
+[?] RESCUE       30 Gold
+    Gives strong guidance without writing the final answer.
+    </pre>
+
+    <p>
+      The player must explicitly request a hint before Gold is spent.
+    </p>
+  </div>
+
+  <div class="box">
+    <h2>COACHING & RETRIES</h2>
+
+    <ol>
+      <li>The player submits an answer.</li>
+      <li>The coach gives a score out of 10, XP earned and concise feedback.</li>
+      <li>The feedback explains what worked and what is missing.</li>
+      <li>The player may make one coached retry.</li>
+      <li>If the retry improves the answer, the higher score replaces the original.</li>
+      <li>Only the additional XP is awarded.</li>
+      <li>No additional Gold is awarded.</li>
+      <li>Afterwards, the coach may provide the complete learning reveal.</li>
+    </ol>
+  </div>
+
+  <div class="box">
+    <h2>SKILL FOCUS</h2>
+
+    <p>Every sub-mission identifies one or two BA skills being practised.</p>
+
+    <ul>
+      <li>Investigation</li>
+      <li>API Literacy</li>
+      <li>Requirements</li>
+      <li>Testing</li>
+      <li>Communication</li>
+      <li>Modelling</li>
+      <li>Stakeholder Management</li>
+    </ul>
+
+    <p>
+      Skill Focus is descriptive. It does not create a separate point system.
+    </p>
+  </div>
+
+  <div class="box">
+    <h2>LOOT</h2>
+
+    <p>
+      Loot represents useful knowledge or reusable Business Analysis tools.
+    </p>
+
+    <pre>
+[+] LOOT UNLOCKED
+
+HTTP Status Codex
+
+Quick reference for common HTTP status codes.
+    </pre>
+
+    <p>
+      Loot should support future missions. Decorative inventory with no learning
+      purpose should be avoided.
+    </p>
+  </div>
+
+  <div class="box">
+    <h2>MISSION RESULTS</h2>
+
+    <p>After a scored sub-mission, the player receives a result block.</p>
+
+    <pre>
+MISSION RESULT
+
+Score:          8 / 10
+XP earned:      80 / 100
+Gold earned:    20
+Gold spent:      0
+
+Coach feedback: COMPLETE
+Next mission:   UNLOCKED
+    </pre>
+  </div>
+
+  <div class="box">
+    <h2>PROGRESS TRACKING</h2>
+
+    <p>Player progress includes:</p>
+
+    <ul>
+      <li>Alias</li>
+      <li>Total XP</li>
+      <li>Gold</li>
+      <li>Sub-missions completed</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>DELIVERY</h2>
+
+    <ul>
+      <li>Mission content uses short sections and clear labels.</li>
+      <li>Tasks remain small and focused.</li>
+      <li>Unnecessary information is avoided until the player needs it.</li>
+      <li>New tools and technical concepts are introduced gradually.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>CHANGELOG</h2>
+
+    <p><strong>v2.9 — 2026-08-11</strong><br>
+      Added bite-sized sub-missions, branching decisions, fixed /10 scoring,
+      Maximum XP, Gold rewards, purchasable hints, coached retries,
+      Skill Focus and functional Loot.
+    </p>
+
+    <p><strong>v2.8 — 2026-08-06</strong><br>
+      Replaced emoji section markers with ASCII styling.
+    </p>
+
+    <p><strong>v2.7 — 2026-07-16</strong><br>
+      Split player and Dungeon Master into distinct roles.
+    </p>
+
+    <p><strong>v2.6 — 2026-07-16</strong><br>
+      Generalised the campaign for public and shared use.
+    </p>
+
+    <p><strong>v2.5 — 2026-07-16</strong><br>
+      Replaced fixed mission XP with scored XP.
+    </p>
+
+    <p><strong>v2.4 — 2026-07-16</strong><br>
+      Added XP and leaderboard rules.
+    </p>
+
+    <p><strong>v2.3 — 2026-07-16</strong><br>
+      Added adaptive delivery pacing.
+    </p>
+
+    <p><strong>v2.2 — 2026-07-16</strong><br>
+      Switched mission content and feedback to English.
+    </p>
+
+    <p><strong>v2.1 — 2026-07-16</strong><br>
+      Added Beginner Calibration and the original feedback loop.
+    </p>
+
+    <p><strong>v2.0 — 2026-07-14</strong><br>
+      Introduced the locked Lost Systems mission format.
+    </p>
+
+    <p><strong>v1.0 — 2026-07-14</strong><br>
+      Original ruleset deprecated.
+    </p>
+  </div>
+
+  <a class="back-link" href="index.html">[ BACK TO HOME ]</a>
 </body>
 </html>
